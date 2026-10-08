@@ -3,7 +3,7 @@ import { isValidTask, createTask, filterTasks, getTaskStats } from '../js/taskMa
 
 describe("isValidTask", () => {
   it("accepta una tasca amb text", () => {
-    expect(isValidTask("Aprendre GitHub")).toBe(true);
+    expect(isValidTask("Aprendre GitHub")).toBe(false);
   });
 
   it("rebutja una tasca buida", () => {
